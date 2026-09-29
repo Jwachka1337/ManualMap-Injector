@@ -14,7 +14,7 @@
 #define SK_A(str) ((const char*)skCrypt(str))
 
 // Путь к загружаемому модулю на диске
-constexpr const wchar_t* kPayloadPath = L"Cheat.dll";
+constexpr const wchar_t* kPayloadPath = L"payload.dll";
 
 using pLoadLibraryA = HMODULE(__stdcall*)(LPCSTR);
 using pGetProcAddress = FARPROC(__stdcall*)(HMODULE, LPCSTR);
